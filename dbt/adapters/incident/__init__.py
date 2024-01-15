@@ -3,11 +3,11 @@ from dbt.adapters.incident.connections import IncidentAdapterCredentials
 from dbt.adapters.incident.impl import IncidentAdapter
 
 from dbt.adapters.base import AdapterPlugin
-from dbt.include import incidentadapter
+from dbt.include import incident
 
 
 Plugin = AdapterPlugin(
     adapter=IncidentAdapter,
     credentials=IncidentAdapterCredentials,
-    include_path=incidentadapter.PACKAGE_PATH
+    include_path=incident.PACKAGE_PATH
     )

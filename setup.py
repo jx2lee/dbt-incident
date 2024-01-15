@@ -13,10 +13,11 @@ setup(
     long_description=description,
     author="jx2lee",
     author_email="dev.jaejun.lee.1991@gmail.com",
-    url="If you have already made a github repo to tie the project to place it here, otherwise update in setup.py later.",
+    url="https://github.com/jx2lee/dbt-incident",
     packages=find_namespace_packages(include=["dbt", "dbt.*"]),
     include_package_data=True,
     install_requires=[
-        "dbt-core~=0.0.1.",
+        "dbt-core==1.4.1",
     ],
+    python_requires=">=3.9"
 )
