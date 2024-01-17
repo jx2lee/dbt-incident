@@ -7,7 +7,7 @@ from dbt.include import incident
 
 
 Plugin = AdapterPlugin(
-    adapter=IncidentAdapter,
+    adapter=IncidentAdapter,  # type: ignore[arg-type]
     credentials=IncidentAdapterCredentials,
     include_path=incident.PACKAGE_PATH
     )
